@@ -4,6 +4,9 @@ ENV GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflo
 
 RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
+
+
+
 WORKDIR /app
 
 RUN \

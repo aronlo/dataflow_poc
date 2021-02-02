@@ -1,5 +1,12 @@
 FROM apache/beam_python3.8_sdk:2.27.0
 
+ENV GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+
+RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
+
+
+
+
 WORKDIR /app
 
 RUN \
@@ -20,11 +27,9 @@ COPY . /app
 RUN mkdir -p tmp
 
 
-RUN gcloud auth activate-service-account --key-file=./local/credenciales/alicorp-sandbox-dataflow-poc.json 
+#RUN gcloud auth activate-service-account --key-file=./local/credenciales/alicorp-sandbox-dataflow-poc.json 
 
-RUN gcloud auth list
-
-RUN export GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+#RUN gcloud auth list
 
 CMD \
 	#mkdir -p /credentials && \
