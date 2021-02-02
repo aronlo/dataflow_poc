@@ -27,5 +27,6 @@ CMD \
 	#mkdir -p /credentials && \
 	#cp -R local/credenciales/sql /credentials && \
 	#chmod -R 0700 /credentials && \
-	python main.py \
-		--runner=DirectRunner
+	#python main.py \
+	#	--runner=DirectRunner  && \
+	bash

@@ -19,9 +19,10 @@ COPY . /app
 
 RUN mkdir -p tmp
 
-# command to run on container start
-#CMD python main.py --class
-#RUN chmod -R 0600 /local/credenciales
+
+RUN gcloud auth activate-service-account --key-file=./local/credenciales/alicorp-sandbox-dataflow-poc.json 
+
+RUN gcloud auth list
 
 CMD \
 	#mkdir -p /credentials && \
