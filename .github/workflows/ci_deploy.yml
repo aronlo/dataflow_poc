@@ -3,6 +3,7 @@ name: Dataflow poc deploy
 on: [push]
 
 env:
+  TZ: 'America/Lima'
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
   GCE_INSTANCE: dataflow-poc
   GCE_INSTANCE_ZONE: us-east1-b
@@ -39,14 +40,7 @@ jobs:
     - run: |-
         sudo apt-get install make
 
-    - name: Build Docker Image
+    
+    - name: Build and Publish Docker Image to Registry
       run: |-
-        docker build \
-        -f local/DockerfileLocal
-        -t "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA" \
-        .
-
-    # Push the Docker image to Google Container Registry
-    - name: Publish Docker Image to Registry
-      run: |-
-        docker push "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA"
+        make gcp-build-push-docker

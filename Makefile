@@ -2,22 +2,17 @@ SHELL=/bin/sh
 
 .PHONY: local
 
-gcp:
+gcp-build-push-docker:
 
 	docker build \
 	-f local/DockerfileGCP \
-	-t gcr.io/alicorp-sandbox/dataflow-poc:latest \
-	--no-cache=false \
+	-t "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)"
 	.
 
-	docker push gcr.io/alicorp-sandbox/dataflow-poc-image:latest
-		
-	docker run \
-		-it --rm \
-		--cpus 1 --cpu-shares 1024 --memory 2g --memory-swap 4g \
-		-v "$(PWD)":/app:rw \
-		gcr.io/alicorp-sandbox/dataflow-poc-image
 
+	docker push "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)"
+	
+		
 local:
 	
 	docker build \
