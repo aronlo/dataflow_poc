@@ -41,8 +41,10 @@ jobs:
 
     - name: Build Docker Image
       run: |-
-        docker build --tag "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA" .
-
+        docker build \
+        -f local/DockerfileLocal
+        -t "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA" \
+        .
 
     # Push the Docker image to Google Container Registry
     - name: Publish Docker Image to Registry
