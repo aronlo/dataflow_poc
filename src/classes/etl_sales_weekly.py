@@ -75,9 +75,9 @@ class SalesWeeklyEtl(beam.PTransform):
 
   def __init__(self, 
                 db, 
-                input_files='./datasets/spikey_sales_weekly/split_*.csv',
-                output_raw='./output/raw_sales',
-                output_error='./output/error_sales'):
+                input_files='gs://alo_dataflow_test/datasets/spikey_sales_weekly/split_*.csv',
+                output_raw='gs://alo_dataflow_test/output/raw_sales',
+                output_error='gs://alo_dataflow_test/output/error_sales'):
 
     self.db = db
     self.input_files = input_files

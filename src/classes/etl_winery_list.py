@@ -80,10 +80,10 @@ class InsertDB(beam.DoFn):
 class WineryListEtl(beam.PTransform):
 
   def __init__(self, 
-                db, 
-                input_files='./datasets/spikey_winery_list/split_*.csv',
-                output_raw='./output/raw_winery',
-                output_error='./output/error_winery'):
+                db,
+                input_files='gs://alo_dataflow_test/datasets/spikey_winery_list/split_*.csv',
+                output_raw='gs://alo_dataflow_test/output/raw_winery',
+                output_error='gs://alo_dataflow_test/output/error_winery'):
 
     self.db = db
     self.input_files = input_files
