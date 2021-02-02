@@ -24,12 +24,20 @@ class FormatElementToObjectDoFn(beam.DoFn):
             }
         except Exception as e:
             yield beam.pvalue.TaggedOutput('error', element)
-            logging.error(f'Error parsing: {e} -> {el} ')
+            #logging.error(f'Error parsing: {e} -> {el}')
+            logging.error('Error parsing: {error} -> {element}'.format(error=e, element= element))
 
 
 class FormatElementToStringDoFn(beam.DoFn):
     def process(self, element):
-        text = f"{element['id']},{element['winery']},{element['variety']},{element['province']},{element['country']},{element['points']},{element['price']}"
+        text = "{0},{1},{2},{3},{4},{5},{6}".format(element['id'],
+                                                    element['winery'],
+                                                    element['variety'],
+                                                    element['province'],
+                                                    element['country'],
+                                                    element['points'],
+                                                    element['price'])
+        #text = f"{element['id']},{element['winery']},{element['variety']},{element['province']},{element['country']},{element['points']},{element['price']}"
         yield text
 
 class InsertDB(beam.DoFn):
