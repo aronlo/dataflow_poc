@@ -52,20 +52,7 @@ class InsertDB(beam.DoFn):
         self._cur.execute('DROP TABLE IF EXISTS sales_weekly;')
         self._cur.execute('CREATE TABLE sales_weekly (time_stamp date, product_name varchar, units_sold integer, retail_price decimal);')
 
-        sql = f'''
-        COPY sales_weekly
-        FROM stdin
-        WITH (
-          FORMAT 'csv',
-          FREEZE 'false',
-          DELIMITER ',',
-          NULL '',
-          HEADER 'true',
-          QUOTE '"',
-          ESCAPE '\\',
-          ENCODING 'utf-8'
-        )
-        '''
+        sql = "COPY winery_list FROM stdin WITH (FORMAT 'csv', FREEZE 'false', DELIMITER ',', NULL '', HEADER 'true', QUOTE '\"', ESCAPE '\\', ENCODING 'utf-8')"
         self._cur.copy_expert(
         sql=sql,
         file=f)

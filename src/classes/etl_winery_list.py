@@ -56,20 +56,9 @@ class InsertDB(beam.DoFn):
         self._cur.execute('DROP TABLE IF EXISTS winery_list;')
         self._cur.execute('CREATE TABLE winery_list (id serial PRIMARY KEY, winery varchar, variety varchar, province varchar, country varchar, points integer, price decimal);')
 
-        sql = f'''
-        COPY winery_list
-        FROM stdin
-        WITH (
-          FORMAT 'csv',
-          FREEZE 'false',
-          DELIMITER ',',
-          NULL '',
-          HEADER 'true',
-          QUOTE '"',
-          ESCAPE '\\',
-          ENCODING 'utf-8'
-        )
-        '''
+        sql = "COPY winery_list FROM stdin WITH (FORMAT 'csv', FREEZE 'false', DELIMITER ',', NULL '', HEADER 'true', QUOTE '\"', ESCAPE '\\', ENCODING 'utf-8')"
+
+
         self._cur.copy_expert(
         sql=sql,
         file=f)
