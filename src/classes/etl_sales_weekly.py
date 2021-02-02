@@ -73,16 +73,11 @@ class InsertDB(beam.DoFn):
 
 class SalesWeeklyEtl(beam.PTransform):
 
-  def __init__(self, 
-                db, 
-                input_files='gs://alo_dataflow_test/datasets/spikey_sales_weekly/split_*.csv',
-                output_raw='gs://alo_dataflow_test/output/raw_sales',
-                output_error='gs://alo_dataflow_test/output/error_sales'):
-
+  def __init__(self, db, gs_path, time_string):
     self.db = db
-    self.input_files = input_files
-    self.output_raw = output_raw
-    self.output_error = output_error
+    self.input_files = '{0}/datasets/spikey_sales_weekly/split_*.csv'.format(gs_path)
+    self.output_raw = '{0}/output/{1}/raw_sales'.format(gs_path, time_string)
+    self.output_error = '{0}/output/{1}/error_sales'.format(gs_path, time_string)
 
   def expand(self, pcoll):
 

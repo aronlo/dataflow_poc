@@ -1,5 +1,9 @@
 FROM python:3.8.5
 
+ENV GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+
+RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
+
 WORKDIR /app
 
 RUN \
@@ -19,14 +23,6 @@ COPY . /app
 
 RUN mkdir -p tmp
 
-# command to run on container start
-#CMD python main.py --class
-#RUN chmod -R 0600 /local/credenciales
-
 CMD \
-	#mkdir -p /credentials && \
-	#cp -R local/credenciales/sql /credentials && \
-	#chmod -R 0700 /credentials && \
-	#python main.py \
-	#	--runner=DirectRunner  && \
-	bash
+	python main.py \
+		--runner=DirectRunner

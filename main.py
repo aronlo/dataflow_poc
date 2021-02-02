@@ -8,6 +8,7 @@ import psycopg2
 import io
 import numpy as np
 import pandas as pd
+from datetime import datetime
 
 from apache_beam.io import ReadFromText, WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
@@ -30,10 +31,13 @@ def run(argv=None):
         user='wocmkztqpfdrzf',
         password='352719f3bd91b730f54fa37ec7c7ae3e6f54c5c6d9292b38d51991a7ba965cc5')
 
+    gs_path = 'gs://alo_dataflow_test'
+    time_string = datetime.now().strftime("%Y%m%d_%H%M")
+
     (
         p
-        | 'Winery list ETL' >> WineryListEtl(db)
-        | 'Weekly sales ETL' >> SalesWeeklyEtl(db)
+        | 'Winery list ETL' >> WineryListEtl(db, gs_path,time_string)
+        | 'Weekly sales ETL' >> SalesWeeklyEtl(db, gs_path,time_string)
     )
 
 
