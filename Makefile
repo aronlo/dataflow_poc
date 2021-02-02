@@ -22,13 +22,14 @@ gcp-test-locally-image:
 
 gcp:
 
+	GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+
 	python main.py \
 		--project=alicorp-sandbox \
 		--region=us-east1 \
 		--runner=DataflowRunner \
 		--staging_location=gs://alo_dataflow_test/stg \
 		--temp_location=gs://alo_dataflow_test/tmp \
-		--machine_type n1-standard-8 \
 		-experiment=use_runner_v2 \
 		--worker_harness_container_image=gcr.io/alicorp-sandbox/dataflow-poc:latest
 

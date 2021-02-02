@@ -27,12 +27,9 @@ COPY . /app
 RUN mkdir -p tmp
 
 
-#RUN gcloud auth activate-service-account --key-file=./local/credenciales/alicorp-sandbox-dataflow-poc.json 
+RUN gcloud auth activate-service-account --key-file=./local/credenciales/alicorp-sandbox-dataflow-poc.json 
 
-#RUN gcloud auth list
+RUN gcloud auth list
 
 CMD \
-	#mkdir -p /credentials && \
-	#cp -R local/credenciales/sql /credentials && \
-	#chmod -R 0700 /credentials && \
 	python main.py
