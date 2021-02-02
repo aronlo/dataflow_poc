@@ -1,0 +1,59 @@
+name: Dataflow poc deploy 
+
+on: [push]
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT }}
+  GCE_INSTANCE: dataflow-poc
+  GCE_INSTANCE_ZONE: us-east1-b
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8.5
+      uses: actions/setup-python@v2
+      with:
+        # Semantic version range syntax or exact version of a Python version
+        python-version: '3.8.5'
+        # Optional - x64 or x86 architecture, defaults to x64
+        architecture: 'x64'
+    # You can test your matrix by printing the current Python version
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    - name: Test with pytest
+      run: |
+        pytest pytest_test_*.py
+
+    - uses: google-github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.GCP_PROJECT }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        #export_default_credentials: true
+
+    # Configure Docker to use the gcloud command-line tool as a credential
+    # helper for authentication
+    - run: |-
+        gcloud --quiet auth configure-docker
+    # Build the Docker image
+
+    - run: |-
+        sudo apt-get install make
+
+    - name: Build Docker Image
+      run: |-
+        docker build --tag "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA" .
+
+
+    # Push the Docker image to Google Container Registry
+    - name: Publish Docker Image to Registry
+      run: |-
+        docker push "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA"
