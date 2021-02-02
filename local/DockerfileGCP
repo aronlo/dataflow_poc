@@ -27,8 +27,4 @@ CMD \
 	#mkdir -p /credentials && \
 	#cp -R local/credenciales/sql /credentials && \
 	#chmod -R 0700 /credentials && \
-	python main.py \
-		--runner=PortableRunner \
-		--job_endpoint=embed \
-		--environment_type=DOCKER \
-		--environment_config= gcr.io/alicorp-sandbox/dataflow-poc:latest
+	python main.py 
