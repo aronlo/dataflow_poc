@@ -6,7 +6,7 @@ gcp-build-push-docker:
 
 	docker build \
 	-f local/DockerfileGCP \
-	-t "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)"
+	-t "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)" \
 	.
 
 
