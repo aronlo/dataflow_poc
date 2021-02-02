@@ -1,0 +1,34 @@
+FROM apache/beam_python3.8_sdk:2.25.0
+
+WORKDIR /app
+
+RUN \
+	apt-get install libpq-dev
+
+COPY requirements.txt .
+
+RUN \
+	pip install pip==20.0.2 && \
+	pip install -r requirements.txt
+
+RUN \
+	PYTHONDONTWRITEBYTECODE=True \
+	export PYTHONDONTWRITEBYTECODE
+
+COPY . /app
+
+RUN mkdir -p tmp
+
+# command to run on container start
+#CMD python main.py --class
+#RUN chmod -R 0600 /local/credenciales
+
+CMD \
+	#mkdir -p /credentials && \
+	#cp -R local/credenciales/sql /credentials && \
+	#chmod -R 0700 /credentials && \
+	python main.py \
+		--runner=PortableRunner \
+		--job_endpoint=embed \
+		--environment_type=DOCKER \
+		--environment_config= gcr.io/alicorp-sandbox/dataflow-poc:latest

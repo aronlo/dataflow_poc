@@ -1,0 +1,502 @@
+id,winery,variety,province,country,points,price
+0,Heitz,Cabernet Sauvignon,California,US,96,235.0
+1,Bodega Carmen Rodríguez,Tinta de Toro,Northern Spain,Spain,96,110.0
+2,Macauley,Sauvignon Blanc,California,US,96,90.0
+3,Ponzi,Pinot Noir,Oregon,US,96,65.0
+4,Domaine de la Bégude,Provence red blend,Provence,France,95,66.0
+5,Numanthia,Tinta de Toro,Northern Spain,Spain,95,73.0
+6,Maurodos,Tinta de Toro,Northern Spain,Spain,95,65.0
+7,Bodega Carmen Rodríguez,Tinta de Toro,Northern Spain,Spain,95,110.0
+8,Bergström,Pinot Noir,Oregon,US,95,65.0
+9,Blue Farm,Pinot Noir,California,US,95,60.0
+10,Borgo del Tiglio,Friulano,Northeastern Italy,Italy,95,80.0
+11,Patricia Green Cellars,Pinot Noir,Oregon,US,95,48.0
+12,Patricia Green Cellars,Pinot Noir,Oregon,US,95,48.0
+13,Vignobles Brumont,Tannat,Southwest France,France,95,90.0
+14,Domaine Serene,Pinot Noir,Oregon,US,95,185.0
+15,Bergström,Chardonnay,Oregon,US,95,90.0
+16,Hall,Cabernet Sauvignon,California,US,95,325.0
+17,Valduero,Tempranillo,Northern Spain,Spain,95,80.0
+18,Château Lagrézette,Malbec,Southwest France,France,95,290.0
+19,Gary Farrell,Pinot Noir,California,US,95,75.0
+20,Heitz,Rosé,California,US,95,24.0
+21,Muga,Tempranillo Blend,Northern Spain,Spain,95,79.0
+22,Numanthia,Tinta de Toro,Northern Spain,Spain,95,220.0
+23,Center of Effort,Chardonnay,California,US,95,60.0
+24,Comartin,Pinot Noir,California,US,95,45.0
+25,Kumeu River,Chardonnay,Kumeu,New Zealand,94,57.0
+26,Bergström,Pinot Noir,Oregon,US,94,62.0
+27,Ponzi,Pinot Noir,Oregon,US,94,105.0
+28,Roar,Pinot Noir,California,US,94,60.0
+29,Saviah,Syrah,Washington,US,94,60.0
+30,Villa Melnik,Mavrud,Bulgaria,Bulgaria,90,15.0
+31,Zepaltas,Chardonnay,California,US,90,37.0
+32,Abbadia Ardenga,Sangiovese,Tuscany,Italy,90,
+33,Bouvet-Ladubay,Sparkling Blend,France Other,France,90,22.0
+34,Buty,Chardonnay,Washington,US,90,42.0
+35,Carillon,Sangiovese,Tuscany,Italy,90,135.0
+36,Clos de L'Oratoire des Papes,Rhône-style White Blend,Rhône Valley,France,90,60.0
+37,Avignonesi,Sangiovese,Tuscany,Italy,90,29.0
+38,Casina di Cornia,Sangiovese,Tuscany,Italy,90,23.0
+39,Castello di Monterinaldi,Red Blend,Tuscany,Italy,90,29.0
+40,Don Bernardino,Mencía,Galicia,Spain,90,17.0
+41,González Byass,Palomino,Andalucia,Spain,90,26.0
+42,Huston,Petite Sirah,Idaho,US,90,55.0
+43,Rignana,Red Blend,Tuscany,Italy,90,39.0
+44,Tardieu-Laurent,Syrah,Rhône Valley,France,90,69.0
+45,Vignavecchia,Red Blend,Tuscany,Italy,90,30.0
+46,Banfi,Sangiovese,Tuscany,Italy,90,90.0
+47,Brandlin,Cabernet Sauvignon,California,US,90,60.0
+48,Brunelli Martoccia,Sangiovese,Tuscany,Italy,90,50.0
+49,Canvasback,Cabernet Sauvignon,Washington,US,90,40.0
+50,Capanne Ricci,Sangiovese,Tuscany,Italy,90,100.0
+51,Chartron et Trébuchet,Chardonnay,Burgundy,France,90,68.0
+52,Cherrier Frères,Sauvignon Blanc,Loire Valley,France,90,42.0
+53,Clement et Florian Berthier,Pinot Noir,Loire Valley,France,90,28.0
+54,De Loach,Chardonnay,California,US,90,18.0
+55,DeLille,Cabernet Sauvignon,Washington,US,90,69.0
+56,Domaine Vacheron,Sauvignon Blanc,Loire Valley,France,90,
+57,Dr. Konstantin Frank,Riesling,New York,US,90,25.0
+58,Efeste,Cabernet Sauvignon-Syrah,Washington,US,90,30.0
+59,Fattoria di Magliano,Red Blend,Tuscany,Italy,90,60.0
+60,Matias Riccitelli,Malbec,Mendoza Province,Argentina,91,30.0
+61,Moorooduc,Pinot Noir,Victoria,Australia,91,36.0
+62,Navarro Correas,Malbec,Mendoza Province,Argentina,91,25.0
+63,Domaine Chenevières,Chardonnay,Burgundy,France,91,45.0
+64,Herdade do Rocim,Portuguese Red,Alentejano,Portugal,91,23.0
+65,Jason-Stephens,Syrah,California,US,91,36.0
+66,Louis Max,Chardonnay,Burgundy,France,91,38.0
+67,Michael Mondavi Family Estate,Cabernet Sauvignon,California,US,91,85.0
+68,Panther Creek,Pinot Noir,Oregon,US,91,50.0
+69,Provenance Vineyards,Cabernet Sauvignon,California,US,91,60.0
+70,Raymond,Cabernet Sauvignon,California,US,91,85.0
+71,Red Car,Pinot Noir,California,US,91,45.0
+72,Silvano Bolmida,Nebbiolo,Piedmont,Italy,91,
+73,Trinity Vineyards,Pinot Gris,Oregon,US,91,19.0
+74,Adega Cooperativa de Borba,Portuguese Red,Alentejo,Portugal,91,15.0
+75,Archery Summit,Pinot Noir,Oregon,US,91,54.0
+76,Aubry,Chardonnay,Champagne,France,91,85.0
+77,B Cellars,Sauvignon Blanc,California,US,91,38.0
+78,B Side,Cabernet Sauvignon,California,US,91,28.0
+79,Bel Colle,Nebbiolo,Piedmont,Italy,91,75.0
+80,Bethel Heights,Pinot Noir,Oregon,US,91,42.0
+81,Binyamina,Cabernet Sauvignon,Upper Galilee,Israel,91,25.0
+82,Ceste,Nebbiolo,Piedmont,Italy,91,
+83,Cascina Cucco,Nebbiolo,Piedmont,Italy,91,59.0
+84,Cascina del Monastero,Nebbiolo,Piedmont,Italy,91,85.0
+85,Cordero di Montezemolo,Nebbiolo,Piedmont,Italy,91,80.0
+86,Domaine Gérard Duplessis,Chardonnay,Burgundy,France,91,45.0
+87,Eagle Glen,Cabernet Sauvignon,California,US,91,22.0
+88,Eleven Eleven,Pinot Noir,California,US,91,65.0
+89,Franciscan,Meritage,California,US,91,50.0
+90,Belle Ambiance,Cabernet Sauvignon,California,US,86,10.0
+91,Adega de Cantanhede,Baga,Beira Atlantico,Portugal,86,12.0
+92,De Stefani,Glera,Veneto,Italy,86,22.0
+93,Parducci,Chardonnay,California,US,86,13.0
+94,Quinta do Portal,Portuguese Red,Douro,Portugal,86,10.0
+95,Rigal,Malbec-Merlot,Southwest France,France,86,14.0
+96,The Naked Grape,Chardonnay,California,US,86,18.0
+97,Tin Barn,Cabernet Sauvignon,California,US,86,36.0
+98,Georges Vigouroux,Merlot-Malbec,Southwest France,France,86,15.0
+99,Georges Vigouroux,Ugni Blanc-Colombard,Southwest France,France,86,10.0
+100,Hawk Watch Winery,Viognier,California,US,86,24.0
+101,Hestan,Cabernet Sauvignon,California,US,86,50.0
+102,Il Grappolo,Sangiovese,Tuscany,Italy,86,45.0
+103,Ehret,Cabernet Sauvignon-Cabernet Franc,California,US,86,48.0
+104,EOS,Moscato,California,US,86,20.0
+105,Martinez & Martinez,Pinot Grigio,Washington,US,86,17.0
+106,Ironstone,Cabernet Franc,California,US,86,12.0
+107,Leaping Horse,Chardonnay,California,US,86,10.0
+108,Kitchen Sink,White Blend,California,US,86,13.0
+109,Kuleto Estate,Chardonnay,California,US,86,45.0
+110,Wines & Winemakers,Portuguese Red,Tejo,Portugal,86,12.0
+111,Zorzal,Rosé,Mendoza Province,Argentina,86,12.0
+112,Charles Krug,Cabernet Sauvignon,California,US,86,125.0
+113,Millbrook,Riesling,New York,US,86,25.0
+114,Waterkloof,Sauvignon Blanc,Stellenbosch,South Africa,86,20.0
+115,Viñalba,Malbec,Mendoza Province,Argentina,86,15.0
+116,Casa de la Ermita,Monastrell,Levante,Spain,86,
+117,Château Clément Termes,Rosé,Southwest France,France,86,20.0
+118,Château Coutinel,Gamay,Southwest France,France,86,15.0
+119,Adega Cooperativa de Borba,Portuguese Red,Alentejano,Portugal,86,7.0
+120,MacPhail,Pinot Noir,California,US,91,59.0
+121,Foursight,Pinot Noir,California,US,91,49.0
+122,Goat Bubbles,Sparkling Blend,California,US,91,42.0
+123,Grgich Hills,Chardonnay,California,US,91,93.0
+124,Navarro,Pinot Noir,California,US,91,32.0
+125,Navarro,Pinot Noir,California,US,91,20.0
+126,Renwood,Zinfandel,California,US,90,100.0
+127,Trinchero,Cabernet Sauvignon,California,US,90,50.0
+128,Pagos del Rey,Tempranillo,Northern Spain,Spain,90,22.0
+129,Biondi,White Blend,Sicily & Sardinia,Italy,90,45.0
+130,Cantine di Marzo,Greco,Southern Italy,Italy,90,18.0
+131,Alexander-Smith,Chardonnay,California,US,90,45.0
+132,Andis,Barbera,California,US,90,26.0
+133,Benziger,Chardonnay,California,US,90,16.0
+134,Beaucanon,Cabernet Sauvignon,California,US,90,30.0
+135,Brecon Estate,Grenache,California,US,90,42.0
+136,Peachy Canyon,Zinfandel,California,US,90,38.0
+137,Three,Rhône-style Red Blend,California,US,90,48.0
+138,Valdelacierva,Tempranillo,Northern Spain,Spain,90,17.0
+139,Château de Lancyre,Rosé,Languedoc-Roussillon,France,90,18.0
+140,Château Suau,Rosé,Bordeaux,France,90,15.0
+141,Clif Family,Sauvignon Blanc,California,US,90,28.0
+142,Santa Cruz Mountain Vineyard,Grenache,California,US,90,25.0
+143,Schmidt,Chardonnay,Oregon,US,90,26.0
+144,Stephen Ross,Albariño,California,US,90,24.0
+145,Goldeneye,Pinot Noir,California,US,90,55.0
+146,Grgich Hills,Zinfandel,California,US,90,36.0
+147,Mar de Viñas,Albariño,Galicia,Spain,90,17.0
+148,Kessler-Haak,Syrah,California,US,90,40.0
+149,Larner,Malvasia Bianca,California,US,90,28.0
+150,Bomb,Pinot Noir,Oregon,US,89,50.0
+151,Hatzimichalis,White Blend,Atalanti Valley,Greece,89,24.0
+152,Bohigas,Sparkling Blend,Catalonia,Spain,89,17.0
+153,Boutari,Assyrtiko,Santorini,Greece,89,21.0
+154,Alpha Estate,Malagouzia,Florina,Greece,89,18.0
+155,Viña Bisquertt,Carmenère,Marchigue,Chile,89,20.0
+156,Chateau Quattre,Bordeaux-style Red Blend,Southwest France,France,89,20.0
+157,Ledger David,Sangiovese,Oregon,US,89,24.0
+158,CVNE,Tempranillo,Northern Spain,Spain,89,44.0
+159,Estampa,Red Blend,Colchagua Valley,Chile,89,19.0
+160,Foxen 7200,Bordeaux-style Red Blend,California,US,89,42.0
+161,Irvine Family Vineyards,Pinot Noir,Oregon,US,89,35.0
+162,Marqués de Cáceres,Tempranillo Blend,Northern Spain,Spain,89,44.0
+163,Matchbook,Syrah,California,US,89,16.0
+164,Eberle,Viognier,California,US,89,23.0
+165,Silvan Ridge,Pinot Noir,Oregon,US,89,36.0
+166,Tenuta degli Dei,Red Blend,Tuscany,Italy,89,25.0
+167,Poggio Mandorlo,Red Blend,Tuscany,Italy,89,22.0
+168,Quinta das Carvalhas,Touriga Nacional,Douro,Portugal,89,20.0
+169,Occasio,Chardonnay,California,US,89,25.0
+170,Sanford,Pinot Noir,California,US,89,42.0
+171,Santa Alba,Cabernet Sauvignon-Cabernet Franc,Curicó Valley,Chile,89,30.0
+172,Boutari,Agiorgitiko,Nemea,Greece,89,17.0
+173,Foursight,Pinot Noir,California,US,89,49.0
+174,Ogier,Rhône-style Red Blend,Rhône Valley,France,89,16.0
+175,Pagos del Rey,Tinta de Toro,Northern Spain,Spain,89,30.0
+176,Altesino,Sangiovese,Tuscany,Italy,89,40.0
+177,Cabreo,Red Blend,Tuscany,Italy,89,57.0
+178,Cameron Hughes,Cabernet Sauvignon,California,US,89,29.0
+179,Casa Donoso,Red Blend,Maule Valley,Chile,89,61.0
+180,Rodney Strong,Chardonnay,California,US,88,25.0
+181,San Simeon,Syrah,California,US,88,25.0
+182,Siduri,Pinot Noir,California,US,88,49.0
+183,Syncline,Picpoul,Washington,US,88,20.0
+184,Piattelli,Bordeaux-style Red Blend,Mendoza Province,Argentina,88,26.0
+185,Pondera,Bordeaux-style Red Blend,Washington,US,88,34.0
+186,Tobin James,Zinfandel,California,US,88,38.0
+187,Tobin James,Zinfandel,California,US,88,38.0
+188,Valdesil,Godello,Northern Spain,Spain,88,25.0
+189,Jaspi,Red Blend,Catalonia,Spain,87,22.0
+190,Tupun,Malbec,Mendoza Province,Argentina,87,15.0
+191,Château Beauregard Lagupeau,Bordeaux-style Red Blend,Bordeaux,France,87,20.0
+192,Château du Taillan,Bordeaux-style Red Blend,Bordeaux,France,87,25.0
+193,Château la Haye,Bordeaux-style Red Blend,Bordeaux,France,87,20.0
+194,Château Lalande Mausse,Bordeaux-style Red Blend,Bordeaux,France,87,20.0
+195,Château Magnol,Bordeaux-style Red Blend,Bordeaux,France,87,25.0
+196,Grand Pacific,Chardonnay,California,US,87,10.0
+197,Hamilton,Malbec,Washington,US,87,18.0
+198,Heron Hill,Chardonnay,New York,US,87,18.0
+199,Heron Hill,Riesling,New York,US,87,14.0
+200,Fox Run,Riesling,New York,US,87,14.0
+201,Glenora,Cabernet Franc,New York,US,87,40.0
+202,Château Roc Taillade,Bordeaux-style Red Blend,Bordeaux,France,87,18.0
+203,Château Sénéjac,Bordeaux-style Red Blend,Bordeaux,France,87,20.0
+204,Chateau Ste. Michelle,Gewürztraminer,Washington,US,87,10.0
+205,Castle Rock,Merlot,Washington,US,87,11.0
+206,Dussek Family Cellars,Cabernet Sauvignon,Washington,US,87,36.0
+207,Serenity,Cabernet Franc,New York,US,87,20.0
+208,Sol Stone,Grenache,Washington,US,87,32.0
+209,Sumarroca,Sparkling Blend,Catalonia,Spain,87,18.0
+210,Poças,Portuguese Red,Douro,Portugal,93,55.0
+211,Rizzi,Nebbiolo,Piedmont,Italy,93,49.0
+212,Robert Biale,Zinfandel,California,US,93,50.0
+213,Sottimano,Nebbiolo,Piedmont,Italy,93,58.0
+214,Domaine Jean-Luc Mader,Riesling,Alsace,France,93,39.0
+215,Domaine Zind-Humbrecht,Riesling,Alsace,France,93,65.0
+216,Bernard Magrez,Syrah-Grenache,Guerrouane,Morocco,93,35.0
+217,Borgogno,Nebbiolo,Piedmont,Italy,93,80.0
+218,Domaine François Schmitt,Riesling,Alsace,France,93,42.0
+219,Gustave Lorentz,Riesling,Alsace,France,93,61.0
+220,Force Majeure,G-S-M,Washington,US,93,58.0
+221,Anglim,Mourvèdre,California,US,93,38.0
+222,Domaine Ostertag,Riesling,Alsace,France,93,48.0
+223,Robert Biale,Zinfandel,California,US,93,50.0
+224,Sottimano,Nebbiolo,Piedmont,Italy,93,58.0
+225,Château Raymond-Lafon,Bordeaux-style White Blend,Bordeaux,France,93,120.0
+226,Red Car,Syrah,California,US,93,50.0
+227,Force Majeure,Cabernet Sauvignon,Washington,US,93,80.0
+228,Mulvane Wine Co.,Syrah,California,US,93,40.0
+229,Caves Aliança,Portuguese Red,Douro,Portugal,93,41.0
+230,Double Canyon,Cabernet Sauvignon,Washington,US,93,48.0
+231,Diamond Creek,Cabernet Sauvignon,California,US,93,200.0
+232,Côtes de Ciel,Petit Verdot,Washington,US,93,39.0
+233,Sparkman,Cabernet Sauvignon,Washington,US,93,62.0
+234,Punset,Nebbiolo,Piedmont,Italy,93,43.0
+235,Domaine Ehrhart,Riesling,Alsace,France,92,35.0
+236,Domaine Zinck,Riesling,Alsace,France,92,48.0
+237,Domaine Zind-Humbrecht,Riesling,Alsace,France,92,55.0
+238,Dona Maria-Júlio Bastos,Portuguese Red,Alentejano,Portugal,92,40.0
+239,Fontanafredda,Nebbiolo,Piedmont,Italy,92,69.0
+240,Château Chantemerle,Bordeaux-style Red Blend,Bordeaux,France,88,16.0
+241,Château Chaubinet,Bordeaux-style White Blend,Bordeaux,France,88,16.0
+242,Château Ferran,Bordeaux-style White Blend,Bordeaux,France,88,
+243,Château Fongalan,Bordeaux-style Red Blend,Bordeaux,France,88,15.0
+244,Château Mezain,Bordeaux-style White Blend,Bordeaux,France,88,13.0
+245,Clos du Val,Chardonnay,California,US,88,28.0
+246,Coeur de Terre,Pinot Noir,Oregon,US,88,36.0
+247,Cramele Halewood,Rosé,Colinele Dobrogei,Romania,88,9.0
+248,Daniel Gehrs,Chardonnay,California,US,88,24.0
+249,Davis Family,Rhône-style White Blend,California,US,88,30.0
+250,Decoy,Merlot,California,US,88,25.0
+251,Reversanti,Nebbiolo,Piedmont,Italy,88,34.0
+252,Roco,Pinot Noir,Oregon,US,88,60.0
+253,Saintsbury,Pinot Noir,California,US,88,54.0
+254,Silvan Ridge,Muscat,Oregon,US,88,15.0
+255,Silvano Bolmida,Nebbiolo,Piedmont,Italy,88,56.0
+256,St. Supéry,Sauvignon Blanc,California,US,88,20.0
+257,Testarossa,Pinot Noir,California,US,88,61.0
+258,Trediberri,Nebbiolo,Piedmont,Italy,88,46.0
+259,Val de Los Frailes,Tempranillo,Northern Spain,Spain,88,30.0
+260,Yuntero,Tempranillo Blend,Central Spain,Spain,88,17.0
+261,Musset-Roullier,Chenin Blanc-Chardonnay,Loire Valley,France,88,
+262,Oso Libre,Cabernet Sauvignon-Merlot,California,US,88,40.0
+263,Oso Libre,Red Blend,California,US,88,39.0
+264,Palladino,Nebbiolo,Piedmont,Italy,88,49.0
+265,Pierre Prieur et Fils,Sauvignon Blanc,Loire Valley,France,88,23.0
+266,Bargetto,Pinot Grigio,California,US,88,16.0
+267,Adelaida,Mourvèdre,California,US,88,32.0
+268,Alma Rosa,Chardonnay,California,US,88,18.0
+269,Lamadrid,Cabernet Sauvignon,Mendoza Province,Argentina,88,15.0
+270,Domaine de Bellene,Pinot Noir,Burgundy,France,92,92.0
+271,Domaine Vincent Girardin,Chardonnay,Burgundy,France,92,94.0
+272,Failla,Chardonnay,California,US,92,58.0
+273,Gallica,Rhône-style Red Blend,California,US,92,50.0
+274,J Vineyards & Winery,Sparkling Blend,California,US,92,48.0
+275,Les Voleurs,Pinot Noir,California,US,92,32.0
+276,Nals Margreid,Pinot Bianco,Northeastern Italy,Italy,92,27.0
+277,Provam,Alvarinho,Vinho Verde,Portugal,92,35.0
+278,Quinta Nova de Nossa Senhora do Carmo,Portuguese White,Douro,Portugal,92,95.0
+279,Ryan Cochrane,Pinot Noir,California,US,92,43.0
+280,Suavia,Garganega,Veneto,Italy,92,33.0
+281,Cantina Terlano,Sauvignon,Northeastern Italy,Italy,92,60.0
+282,Château du Cèdre,Malbec,Southwest France,France,92,
+283,Château Haut Selve,Bordeaux-style Red Blend,Bordeaux,France,92,30.0
+284,Communication Block,Cabernet Sauvignon,California,US,92,100.0
+285,Baker & Brain,Syrah,California,US,92,35.0
+286,Domaine de Bellene,Chardonnay,Burgundy,France,91,60.0
+287,Domaine D'en Ségur,Bordeaux-style Red Blend,Southwest France,France,91,16.0
+288,Domaine Sangouard-Guyot,Chardonnay,Burgundy,France,91,40.0
+289,Elk Cove,Pinot Noir,Oregon,US,91,60.0
+290,Evening Land,Pinot Noir,Burgundy,France,91,100.0
+291,Herdade de São Miguel,Touriga Nacional,Alentejano,Portugal,91,18.0
+292,Iris Vineyards,Pinot Gris,Oregon,US,91,16.0
+293,Jack Creek,Syrah,California,US,91,42.0
+294,Lionel Osmin & Cie,Gros and Petit Manseng,Southwest France,France,91,
+295,Brick & Mortar,Pinot Noir,California,US,91,20.0
+296,Colterenzio,Sauvignon,Northeastern Italy,Italy,91,25.0
+297,Colterenzio,Pinot Grigio,Northeastern Italy,Italy,91,23.0
+298,Cuvaison,Pinot Noir,California,US,91,38.0
+299,De Loach,Zinfandel,California,US,91,32.0
+300,Saviah,Syrah,Washington,US,94,60.0
+301,Smith-Madrone,Riesling,California,US,94,30.0
+302,Speri,Red Blend,Veneto,Italy,94,85.0
+303,Stony Hill,Riesling,California,US,94,30.0
+304,Testarossa,Pinot Noir,California,US,94,65.0
+305,Kumeu River,Chardonnay,Kumeu,New Zealand,94,57.0
+306,Bergström,Pinot Noir,Oregon,US,94,90.0
+307,Black Kite,Pinot Noir,California,US,94,85.0
+308,Blue Farm,Pinot Noir,California,US,94,70.0
+309,Domaine Serene,Pinot Noir,Oregon,US,94,70.0
+310,Gary Farrell,Pinot Noir,California,US,94,60.0
+311,Gini,Garganega,Veneto,Italy,94,38.0
+312,Gini,Garganega,Veneto,Italy,94,29.0
+313,Parallel,Cabernet Sauvignon,California,US,94,155.0
+314,Patricia Green Cellars,Pinot Noir,Oregon,US,94,48.0
+315,Sbragia,Cabernet Sauvignon,California,US,94,95.0
+316,Schramsberg,Sparkling Blend,California,US,94,80.0
+317,Trisaetum,Pinot Noir,Oregon,US,94,49.0
+318,Vignobles Brumont,Tannat-Cabernet,Southwest France,France,94,35.0
+319,Waters,Syrah,Washington,US,94,50.0
+320,Domaine de la Bégude,Provence red blend,Provence,France,94,44.0
+321,Bodega Classica,Tempranillo Blend,Northern Spain,Spain,94,68.0
+322,Château Vignelaure,Rosé,Provence,France,94,20.0
+323,Matarromera,Red Blend,Northern Spain,Spain,94,
+324,Pellet Estate,Cabernet Sauvignon,California,US,94,95.0
+325,Domaine de la Bégude,Provence red blend,Provence,France,94,44.0
+326,Pascual Toso,Cabernet Sauvignon,Mendoza Province,Argentina,94,50.0
+327,Château d'Esclans,Rosé,Provence,France,94,100.0
+328,Château Lagrézette,Malbec,Southwest France,France,94,70.0
+329,Ponzi,Chardonnay,Oregon,US,94,63.0
+330,Fratelli Alessandria,Nebbiolo,Piedmont,Italy,91,75.0
+331,Friedrich-Wilhelm-Gymnasium,Riesling,Mosel,Germany,91,23.0
+332,Galerie,Cabernet Sauvignon,California,US,91,50.0
+333,Granbazán,Albariño,Galicia,Spain,91,22.0
+334,Grieve,Sauvignon Blanc,California,US,91,45.0
+335,Herdade do Rocim,Alicante Bouschet,Alentejano,Portugal,91,130.0
+336,Jada Vineyard & Winery,Rhône-style White Blend,California,US,91,38.0
+337,La Crema,Pinot Noir,Oregon,US,91,30.0
+338,Lawer,Syrah,California,US,91,22.0
+339,Le Strette,Nebbiolo,Piedmont,Italy,91,
+340,Marchesi di Barolo,Nebbiolo,Piedmont,Italy,91,90.0
+341,Michael Mondavi Family Estate,Cabernet Sauvignon,California,US,91,60.0
+342,Oddero,Nebbiolo,Piedmont,Italy,91,115.0
+343,Small Vines,Pinot Noir,California,US,91,55.0
+344,Terras de Alter,Rhône-style Red Blend,Alentejano,Portugal,91,30.0
+345,Terras de Alter,Aragonês,Alentejano,Portugal,91,14.0
+346,Testarossa,Chardonnay,California,US,91,48.0
+347,Thomas George,Chardonnay,California,US,91,40.0
+348,Thörle,Silvaner,Rheinhessen,Germany,91,39.0
+349,Vite Colte,Nebbiolo,Piedmont,Italy,91,60.0
+350,Wedell Cellars,Chardonnay,California,US,91,50.0
+351,Winderlea,Pinot Noir,Oregon,US,91,48.0
+352,A.R. Lenoble ,Chardonnay,Champagne,France,91,54.0
+353,Adega Cooperativa de Borba,Portuguese Red,Alentejo,Portugal,91,42.0
+354,Argyle,Sparkling Blend,Oregon,US,91,50.0
+355,Bazelet HaGolan,Cabernet Sauvignon,Golan Heights,Israel,91,40.0
+356,Bernardus,Chardonnay,California,US,91,40.0
+357,Big Table Farm,Pinot Noir,Oregon,US,91,42.0
+358,Icardi,Nebbiolo,Piedmont,Italy,91,85.0
+359,Matarromera,Tempranillo,Northern Spain,Spain,91,32.0
+360,Le Vigne,Red Blend,California,US,90,41.0
+361,Paix Sur Terre,Ugni Blanc,California,US,90,27.0
+362,Reustle,Grüner Veltliner,Oregon,US,90,29.0
+363,Domaine Bott-Geyl,Pinot Noir,Alsace,France,90,33.0
+364,Domaine Faiveley,Pinot Noir,Burgundy,France,90,70.0
+365,Pike Road,Pinot Noir,Oregon,US,90,19.0
+366,Planeta,Frappato,Sicily & Sardinia,Italy,90,22.0
+367,Schnaitmann,Lemberger,Württemberg,Germany,90,25.0
+368,Domaine Ostertag,Sylvaner,Alsace,France,90,27.0
+369,Domaine Schoffit,Chasselas,Alsace,France,90,22.0
+370,Domaine Zind-Humbrecht,Alsace white blend,Alsace,France,90,30.0
+371,Firesteed,Pinot Gris,Oregon,US,90,15.0
+372,The Eyrie Vineyards,Pinot Noir,Oregon,US,90,45.0
+373,Albert Bichot,Pinot Noir,Burgundy,France,90,80.0
+374,Baglio del Cristo di Campobello,White Blend,Sicily & Sardinia,Italy,90,
+375,Occhipinti,White Blend,Sicily & Sardinia,Italy,90,
+376,J. Scott Cellars,Albariño,Oregon,US,90,18.0
+377,Villa Raiano,Greco,Southern Italy,Italy,90,19.0
+378,Dr. H. Thanisch (Erben Thanisch),Riesling,Mosel,Germany,90,31.0
+379,Hahn,Cabernet Sauvignon,California,US,90,15.0
+380,Lyeth,Cabernet Sauvignon,California,US,90,15.0
+381,Napa Cellars,Merlot,California,US,90,24.0
+382,Paraduxx,Red Blend,California,US,90,80.0
+383,Quintana de Cue,Tempranillo,Northern Spain,Spain,90,35.0
+384,Winzergenossenschaft Mayschoss-Altenahr,Früburgunder,Ahr,Germany,90,40.0
+385,Casa del Valle,Tempranillo,Central Spain,Spain,90,28.0
+386,Freemark Abbey,Cabernet Sauvignon,California,US,90,50.0
+387,Joleté,Cabernet Sauvignon,California,US,90,28.0
+388,Prospect 772,Rhône-style Red Blend,California,US,90,36.0
+389,Boatique,Cabernet Sauvignon,California,US,90,40.0
+390,Hearst Ranch,Chardonnay,California,US,90,50.0
+391,Hunt Cellars,Cabernet Sauvignon,California,US,90,75.0
+392,La Fiorita,Sangiovese,Tuscany,Italy,90,60.0
+393,Merry Cellars,Malbec,Washington,US,90,46.0
+394,Mission Hill,Bordeaux-style Red Blend,British Columbia,Canada,90,70.0
+395,Palacio de Fefiñanes,Albariño,Galicia,Spain,90,26.0
+396,Pascal & Nicolas Reverdy,Pinot Noir,Loire Valley,France,90,
+397,Piccini,Sangiovese,Tuscany,Italy,90,60.0
+398,Pietranera,Sangiovese,Tuscany,Italy,90,75.0
+399,Purcari,White Blend,Moldova,Moldova,90,32.0
+400,Renieri,Sangiovese,Tuscany,Italy,90,95.0
+401,Podere Scopetone,Sangiovese,Tuscany,Italy,90,60.0
+402,Sesta di Sopra,Sangiovese,Tuscany,Italy,90,70.0
+403,Carlson,White Blend,California,US,90,20.0
+404,Château Pégau,Rhône-style Red Blend,Rhône Valley,France,90,27.0
+405,Kirkland Signature,Rhône-style Red Blend,Rhône Valley,France,90,20.0
+406,Medlock Ames,Cabernet Sauvignon,California,US,90,75.0
+407,Passaggio,Sauvignon Blanc,California,US,90,28.0
+408,Patland,Chardonnay,California,US,90,60.0
+409,Trig Point,Chardonnay,California,US,90,22.0
+410,Valquejigoso,White Blend,Spain Other,Spain,90,49.0
+411,Weninger,Kekfrankos,Sopron,Hungary,90,35.0
+412,Tenuta di Sesta,Sangiovese,Tuscany,Italy,90,90.0
+413,Terlato,Chardonnay,California,US,90,30.0
+414,The Calling,Cabernet Sauvignon,California,US,90,35.0
+415,Westwood,Rhône-style Red Blend,California,US,90,38.0
+416,Fenestra,Tempranillo,California,US,90,22.0
+417,Castello di Bossi,Sangiovese,Tuscany,Italy,90,30.0
+418,Cecchi,Red Blend,Tuscany,Italy,90,32.0
+419,Cafaggio,Sangiovese,Tuscany,Italy,90,35.0
+420,Dussek Family Cellars,Cabernet Sauvignon,Washington,US,87,36.0
+421,League of Rogues,Zinfandel,California,US,87,30.0
+422,Serenity,Cabernet Franc,New York,US,87,20.0
+423,Sol Stone,Grenache,Washington,US,87,32.0
+424,Sumarroca,Sparkling Blend,Catalonia,Spain,87,18.0
+425,Trus,Tempranillo,Northern Spain,Spain,87,27.0
+426,Va Piano,Sauvignon Blanc,Washington,US,87,20.0
+427,Les Hauts de Tousquiron,Bordeaux-style Red Blend,Bordeaux,France,87,
+428,McGrail,Chardonnay,California,US,87,30.0
+429,Michael David,Cabernet Sauvignon,California,US,87,20.0
+430,3 Horse Ranch Vineyards,Cabernet Sauvignon,Idaho,US,87,23.0
+431,Cairdeas,Rhône-style White Blend,Washington,US,87,22.0
+432,Citille di Sopra,Sangiovese,Tuscany,Italy,87,75.0
+433,Castello Romitorio,Sangiovese,Tuscany,Italy,87,98.0
+434,Château de Portets,Bordeaux-style White Blend,Bordeaux,France,87,
+435,Villa San Juliette,Cabernet Sauvignon,California,US,87,20.0
+436,Hat Ranch,Chardonnay,Idaho,US,87,22.0
+437,Huston,White Blend,Idaho,US,87,16.0
+438,Fattoria di Magliano,Vermentino,Tuscany,Italy,87,28.0
+439,Bodegas Dios Baco S.L.,Sherry,Andalucia,Spain,87,25.0
+440,Ceralti,Red Blend,Tuscany,Italy,87,17.0
+441,Coiled,Riesling,Idaho,US,87,17.0
+442,Condado de Oriza,Tempranillo,Northern Spain,Spain,87,15.0
+443,Delgado Zuleta,Sherry,Andalucia,Spain,87,16.0
+444,Señorío de Sotillo,Tempranillo Blend,Northern Spain,Spain,87,15.0
+445,Vale,Tempranillo,Idaho,US,87,38.0
+446,Portal del Montsant,Red Blend,Catalonia,Spain,87,28.0
+447,La Collina dei Lecci,Sangiovese,Tuscany,Italy,87,52.0
+448,Fattoria La Lecciaia,Sangiovese,Tuscany,Italy,87,58.0
+449,Ferrero,Sangiovese,Tuscany,Italy,87,60.0
+450,Colinas do Douro,Rosé,Douro,Portugal,86,15.0
+451,Latium di Morini,White Blend,Veneto,Italy,86,15.0
+452,Lawer,Chardonnay,California,US,86,26.0
+453,Hawk Watch Winery,Syrah,California,US,86,32.0
+454,Falua,Portuguese Red,Tejo,Portugal,86,10.0
+455,Finca Las Moras,Sauvignon Blanc,Other,Argentina,86,10.0
+456,The Naked Grape,Moscato,California,US,86,18.0
+457,Ramos-Pinto,Portuguese White,Douro,Portugal,86,12.0
+458,Obelisco Estate,Rosé,Washington,US,86,35.0
+459,Orsi Family Vineyards,Aglianico,California,US,86,34.0
+460,Bota Box,Malbec,Mendoza Province,Argentina,86,23.0
+461,Bouchard Finlayson,Sauvignon Blanc,Walker Bay,South Africa,86,20.0
+462,Winc,Cabernet Sauvignon,California,US,86,31.0
+463,Cass,Viognier,California,US,86,24.0
+464,Castle Rock,Merlot,Washington,US,86,12.0
+465,Angeline,Pinot Noir,California,US,86,18.0
+466,Domaine de Lamothe,White Blend,Southwest France,France,86,10.0
+467,Don Miguel Gascón,Malbec,Mendoza Province,Argentina,86,15.0
+468,Eberle,Chardonnay,California,US,86,24.0
+469,Finca la Malena,Torrontés,Mendoza Province,Argentina,86,14.0
+470,Firestone,Sauvignon Blanc,California,US,86,14.0
+471,Companhia das Quintas,Portuguese Red,Alentejano,Portugal,86,15.0
+472,DeLorimier,Primitivo,California,US,86,38.0
+473,Global Wines,Touriga Nacional,Dão,Portugal,86,13.0
+474,Guenoc,Pinot Noir,California,US,86,12.0
+475,Hawk Watch Winery,Red Blend,California,US,86,32.0
+476,Lionel Osmin & Cie,Semillon-Sauvignon Blanc,Southwest France,France,86,15.0
+477,Orsi Family Vineyards,Barbera,California,US,86,28.0
+478,Quinta do Arrobe,Portuguese Red,Tejo,Portugal,86,
+479,Quinta Nova de Nossa Senhora do Carmo,Portuguese Rosé,Douro,Portugal,86,30.0
+480,Foursight,Pinot Noir,California,US,89,49.0
+481,Boutari,Agiorgitiko,Nemea,Greece,89,17.0
+482,Les Vignobles Foncalieu,Grenache-Syrah,Rhône Valley,France,89,11.0
+483,Marchesi de' Frescobaldi,Sangiovese,Tuscany,Italy,89,43.0
+484,Domaine Rotier,Red Blend,Southwest France,France,89,19.0
+485,Domaine Rotier,White Blend,Southwest France,France,89,28.0
+486,Dr. Pauly Bergweiler,Riesling,Mosel,Germany,89,26.0
+487,Cave du Vin Blanc de Morgex et de la Salle,Prié Blanc,Italy Other,Italy,89,
+488,Aubichon Cellars,Chardonnay,Oregon,US,89,35.0
+489,Boëté,Bordeaux-style Red Blend,California,US,89,30.0
+490,Castellare di Castellina,Cabernet Sauvignon,Tuscany,Italy,89,55.0
+491,Château Bouissel,Negrette,Southwest France,France,89,
+492,Anam Cara,Pinot Noir,Oregon,US,89,46.0
+493,Carden,Pinot Noir,Oregon,US,89,50.0
+494,Carhartt Vineyard,Red Blend,California,US,89,43.0
+495,Quinta da Romaneira,Syrah,Duriense,Portugal,89,45.0
+496,Rideau,Syrah,California,US,89,39.0
+497,Tenuta di Trecciano,Red Blend,Tuscany,Italy,89,30.0
+498,Terre del Marchesato,Cabernet Sauvignon,Tuscany,Italy,89,45.0
+499,Vega Escal,Red Blend,Catalonia,Spain,89,23.0
+500,M. Chapoutier,Grenache-Syrah,Rhône Valley,France,89,15.0

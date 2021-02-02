@@ -1,0 +1,12 @@
+__pycache__/
+
+*.json
+*.pem
+*.yml
+!cloudbuild.yml
+.DS_Store
+notes.txt
+requirements-outdated.txt
+tmp/
+
+output/
