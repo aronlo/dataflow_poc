@@ -10,13 +10,13 @@ gcp:
 	--no-cache=false \
 	.
 
-	docker push gcr.io/alicorp-sandbox/dataflow-poc:latest
+	docker push gcr.io/alicorp-sandbox/dataflow-poc-image:latest
 		
 	docker run \
 		-it --rm \
 		--cpus 1 --cpu-shares 1024 --memory 2g --memory-swap 4g \
 		-v "$(PWD)":/app:rw \
-		gcr.io/alicorp-sandbox/dataflow-poc:latest
+		gcr.io/alicorp-sandbox/dataflow-poc-image
 
 local:
 	
@@ -31,16 +31,3 @@ local:
 		--cpus 1 --cpu-shares 1024 --memory 2g --memory-swap 4g \
 		-v "$(PWD)":/app:rw \
 		dataflow/local
-	
-		
-	#docker run \
-		-it --rm \
-		--cpus 1 --cpu-shares 1024 --memory 2g --memory-swap 4g \
-		-v "$(PWD)":/app:rw \
-		dataflow/local
-
-#docker run \
-		-it --rm \
-		--cpus 1 --cpu-shares 1024 --memory 2g --memory-swap 4g \
-		-v "$(PWD)":/app:rw \
-		test/local
