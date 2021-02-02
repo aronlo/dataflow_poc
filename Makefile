@@ -22,17 +22,15 @@ gcp-test-locally-image:
 
 gcp:
 
-	docker build \
-	-f local/DockerfileGCP \
-	-t gcp_dataflow/local \
-	--no-cache=false \
-	.
-
 	python main.py \
-		--runner=PortableRunner \
-		--job_endpoint=embed \
-		--environment_type=DOCKER \
-		--environment_config= gcp_dataflow/local
+		--project=alicorp-sandbox \
+		--region=us-east1 \
+		--runner=DataflowRunner \
+		--staging_location=gs://alo_dataflow_test/stg \
+		--temp_location=gs://alo_dataflow_test/tmp \
+		--machine_type n1-standard-8 \
+		-experiment=use_runner_v2 \
+		--worker_harness_container_image=gcr.io/alicorp-sandbox/dataflow-poc:latest
 
 
 local:
