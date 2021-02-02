@@ -12,7 +12,29 @@ gcp-build-push-docker:
 
 	docker push "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)"
 	
-		
+gcp-test-locally-image:
+
+	python main.py \
+		--runner=PortableRunner \
+		--job_endpoint=embed \
+		--environment_type=DOCKER \
+		--environment_config= gcr.io/alicorp-sandbox/dataflow-poc:latest
+
+gcp:
+
+	docker build \
+	-f local/DockerfileGCP \
+	-t gcp_dataflow/local \
+	--no-cache=false \
+	.
+
+	python main.py \
+		--runner=PortableRunner \
+		--job_endpoint=embed \
+		--environment_type=DOCKER \
+		--environment_config= gcp_dataflow/local
+
+
 local:
 	
 	docker build \
