@@ -181,8 +181,8 @@ Se crearon varios comandos en el Makefile que permiten ya de manera automatica h
 
 
 - Crear un Scheduler que invoque el pipeline desde dataflow
-    - **gcscheduler**: este comando crea un scheduler que invoca el pipeline en dataflow por medio de un **HTTP POST** al API de Dataflow. Para mayor información consultar el [la documentacion del API de Google Dataflow](https://cloud.google.com/dataflow/docs/reference/rest)
-    - **gcscheduler-run**: ese comando invoca el scheduler de manera manual.
+    - **make gcscheduler**: este comando crea un scheduler que invoca el pipeline en dataflow por medio de un **HTTP POST** al API de Dataflow. Para mayor información consultar el [la documentacion del API de Google Dataflow](https://cloud.google.com/dataflow/docs/reference/rest)
+    - **make gcscheduler-run**: ese comando invoca el scheduler de manera manual.
 
 
 ** Dataflow para ejecutar el pipeline busca el template que debe de estar en un butcket de GCS.
