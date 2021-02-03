@@ -13,10 +13,11 @@ from datetime import datetime
 from apache_beam.io import ReadFromText, WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
 
-from src.utils.database import Database
-
-from src.classes.etl_winery_list import WineryListEtl
-from src.classes.etl_sales_weekly import SalesWeeklyEtl
+from src import (
+    Database, 
+    WineryListEtl,
+    SalesWeeklyEtl
+)
 
 def run(argv=None):
     parser = argparse.ArgumentParser()

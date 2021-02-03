@@ -1,11 +1,8 @@
 FROM python:3.8.5
 
-ENV GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+ENV GOOGLE_APPLICATION_CREDENTIALS="local/credenciales/alicorp-sandbox-dataflow-poc.json"
 
 RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
-
-
-
 
 WORKDIR /app
 
@@ -28,4 +25,4 @@ RUN mkdir -p tmp
 
 CMD \
 	python main.py \
-		--runner=DirectRunner
+		--runner=DirectRunner 

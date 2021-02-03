@@ -7,8 +7,6 @@ import pandas as pd
 
 from apache_beam.io import ReadFromText, WriteToText
 
-from src.utils.database import Database
-
 class FormatElementToObjectDoFn(beam.DoFn):
     def process(self, element):
         el = [ '{}'.format(x) for x in list(csv.reader([element], delimiter=',', quotechar='"'))[0] ]

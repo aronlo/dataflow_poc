@@ -34,6 +34,19 @@ gcp:
 		--worker_harness_container_image=gcr.io/alicorp-sandbox/dataflow-poc:latest
 
 
+create-template:
+
+	python main.py \
+		--project=alicorp-sandbox \
+		--region=us-east1 \
+		--runner=DataflowRunner \
+		--staging_location=gs://alo_dataflow_test/stg \
+		--temp_location=gs://alo_dataflow_test/tmp \
+		--template_location=gs://alo_dataflow_test/template/temp1 \
+		
+		#--experiment=use_runner_v2 \
+		#--worker_harness_container_image=gcr.io/py-ali-as-pe-pricing-afrecho/afrecho-dataflow:latest 
+
 local:
 	
 	docker build \
