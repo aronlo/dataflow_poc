@@ -1,0 +1,25 @@
+FROM python:3.8.5
+
+ENV GOOGLE_APPLICATION_CREDENTIALS="local/credenciales/alicorp-sandbox-dataflow-poc.json"
+ENV PYTHONDONTWRITEBYTECODE=True
+
+WORKDIR /app
+
+COPY requirements_gcp_template.txt .
+
+RUN \
+	pip install pip==21.0.1 && \
+	pip install -r requirements_gcp_template.txt
+
+COPY . /app
+
+CMD \
+	python main.py \
+		--project alicorp-sandbox \
+		--region us-east1 \
+		--runner DataflowRunner \
+		--staging_location gs://alo_dataflow_test/stg \
+		--temp_location gs://alo_dataflow_test/tmp \
+		--experiment use_runner_v2 \
+		--worker_harness_container_image gcr.io/alicorp-sandbox/dataflow-poc:latest \
+		--template_location gs://alo_dataflow_test/template/dataflow-template

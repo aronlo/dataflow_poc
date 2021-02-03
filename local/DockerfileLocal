@@ -1,27 +1,19 @@
 FROM python:3.8.5
 
 ENV GOOGLE_APPLICATION_CREDENTIALS="local/credenciales/alicorp-sandbox-dataflow-poc.json"
+ENV PYTHONDONTWRITEBYTECODE=True
 
 RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
 WORKDIR /app
 
-RUN \
-	apt-get install libpq-dev
-
-COPY requirements.txt .
+COPY requirements_local.txt .
 
 RUN \
-	pip install pip==20.0.2 && \
-	pip install -r requirements.txt
-
-RUN \
-	PYTHONDONTWRITEBYTECODE=True \
-	export PYTHONDONTWRITEBYTECODE
+	pip install pip==21.0.1 && \
+	pip install -r requirements_local.txt
 
 COPY . /app
-
-RUN mkdir -p tmp
 
 CMD \
 	python main.py \

@@ -75,6 +75,7 @@ class InsertDB(beam.DoFn):
     self._conn.close()
 
 
+
 class WineryListEtl(beam.PTransform):
 
   def __init__(self, db, gs_path, time_string):

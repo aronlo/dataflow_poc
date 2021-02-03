@@ -6,6 +6,5 @@ __pycache__/
 .DS_Store
 notes.txt
 requirements-outdated.txt
-tmp/
 
 output/

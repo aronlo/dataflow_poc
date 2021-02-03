@@ -1,28 +1,19 @@
 FROM apache/beam_python3.8_sdk:2.27.0
 
-ENV GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+ENV GOOGLE_APPLICATION_CREDENTIALS="local/credenciales/alicorp-sandbox-dataflow-poc.json"
+ENV PYTHONDONTWRITEBYTECODE=True
 
 RUN ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
-
 WORKDIR /app
 
-RUN \
-	apt-get install libpq-dev
-
-COPY requirements.txt .
+COPY requirements_gcp.txt .
 
 RUN \
-	pip install pip==20.0.2 && \
-	pip install -r requirements.txt
-
-RUN \
-	PYTHONDONTWRITEBYTECODE=True \
-	export PYTHONDONTWRITEBYTECODE
+	pip install pip==21.0.1 && \
+	pip install -r requirements_gcp.txt
 
 COPY . /app
-
-RUN mkdir -p tmp
 
 CMD \
 	python main.py \
