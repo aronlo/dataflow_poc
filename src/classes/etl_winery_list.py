@@ -102,9 +102,9 @@ class WineryListEtl(beam.PTransform):
 
     # Creamos un dataframe a partir del PCollection
     (formated_pcoll
-        | beam.combiners.ToList()
-        | beam.Map(lambda element_list: pd.DataFrame(element_list))
-        | beam.ParDo(InsertDB(self.db))
+        | 'Convert Pcoll into a list' >> beam.combiners.ToList()
+        | 'Convert list into a dataframe' >> beam.Map(lambda element_list: pd.DataFrame(element_list))
+        | 'Insert into database' >> beam.ParDo(InsertDB(self.db))
     )
 
     # Data con error

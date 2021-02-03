@@ -81,7 +81,7 @@ class SalesWeeklyEtl(beam.PTransform):
 
     data = (
       pcoll
-      | 'Read winery list csv' >> ReadFromText(self.input_files, skip_header_lines=True)
+      | 'Read weekly sales csv' >> ReadFromText(self.input_files, skip_header_lines=True)
       | 'Transform string line to an object' >> beam.ParDo(FormatElementToObjectDoFn()).with_outputs('error', main='formated_pcoll')
     )
 
@@ -91,14 +91,14 @@ class SalesWeeklyEtl(beam.PTransform):
     (
       formated_pcoll 
       | 'Format to string' >> beam.ParDo(FormatElementToStringDoFn())
-      | 'Write winery data to csv' >>  WriteToText(self.output_raw, file_name_suffix='.csv', header='time_stamp,product_name,units_sold,retail_price')
+      | 'Write weekly sales to csv' >>  WriteToText(self.output_raw, file_name_suffix='.csv', header='time_stamp,product_name,units_sold,retail_price')
     )
 
     # Creamos un dataframe a partir del PCollection
     (formated_pcoll
-        | beam.combiners.ToList()
-        | beam.Map(lambda element_list: pd.DataFrame(element_list))
-        | beam.ParDo(InsertDB(self.db))
+        | 'Convert Pcoll into a list' >> beam.combiners.ToList()
+        | 'Convert list into a dataframe' >> beam.Map(lambda element_list: pd.DataFrame(element_list))
+        | 'Insert into database' >> beam.ParDo(InsertDB(self.db))
     )
 
     # Data con error

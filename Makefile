@@ -6,46 +6,48 @@ gcp-build-push-docker:
 
 	docker build \
 	-f local/DockerfileGCP \
-	-t "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)" \
+	-t "gcr.io/alicorp-sandbox/dataflow-poc:latest" \
+	--no-cache=false \
 	.
 
+	# Se configura esto para que docker haga push a Google Registry
+	# gcloud auth configure-docker
 
-	docker push "gcr.io/$(PROJECT_ID)/$(GCE_INSTANCE)-image:$(GITHUB_SHA)"
+	docker push "gcr.io/alicorp-sandbox/dataflow-poc:latest"
 	
-gcp-test-locally-image:
+gcp-run-docker-locally:
 
-	python main.py \
+	python3 main.py \
 		--runner=PortableRunner \
 		--job_endpoint=embed \
+		--staging_location=gs://alo_dataflow_test/stg \
+		--temp_location=gs://alo_dataflow_test/tmp \
 		--environment_type=DOCKER \
-		--environment_config= gcr.io/alicorp-sandbox/dataflow-poc:latest
+		--environment_config=gcr.io/alicorp-sandbox/dataflow-poc:latest
 
-gcp:
 
-	GOOGLE_APPLICATION_CREDENTIALS="./local/credenciales/alicorp-sandbox-dataflow-poc.json"
+gcp-run-docker-dataflow:
 
-	python main.py \
+	python3 main.py \
 		--project=alicorp-sandbox \
 		--region=us-east1 \
 		--runner=DataflowRunner \
 		--staging_location=gs://alo_dataflow_test/stg \
 		--temp_location=gs://alo_dataflow_test/tmp \
-		-experiment=use_runner_v2 \
+		--experiment=use_runner_v2 \
 		--worker_harness_container_image=gcr.io/alicorp-sandbox/dataflow-poc:latest
 
+gcp-create-dataflow-template:
 
-create-template:
-
-	python main.py \
+	python3 main.py \
 		--project=alicorp-sandbox \
 		--region=us-east1 \
 		--runner=DataflowRunner \
 		--staging_location=gs://alo_dataflow_test/stg \
 		--temp_location=gs://alo_dataflow_test/tmp \
-		--template_location=gs://alo_dataflow_test/template/temp1 \
-		
-		#--experiment=use_runner_v2 \
-		#--worker_harness_container_image=gcr.io/py-ali-as-pe-pricing-afrecho/afrecho-dataflow:latest 
+		--experiment=use_runner_v2 \
+		--worker_harness_container_image=gcr.io/alicorp-sandbox/dataflow-poc:latest \
+		--template_location=gs://alo_dataflow_test/template/dataflow-template
 
 local:
 	
